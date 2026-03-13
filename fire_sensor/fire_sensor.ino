@@ -23,9 +23,9 @@
 #include <HTTPClient.h>
 
 // ====== CONFIGURE THESE ======
-const char* ssid      = "SVKM NMIMS STUDENT";
-const char* password  = "samarth12";
-const char* serverUrl = "http://10.110.7.93:8000/api/hardware/fire-gas";
+const char* ssid      = "MSI 5547";
+const char* password  = "<39r577M";
+const char* serverUrl = "http://10.0.18.235:8000/api/hardware/fire-gas";
 
 #define MQ2_A0_PIN   35
 #define MQ2_D0_PIN   34
