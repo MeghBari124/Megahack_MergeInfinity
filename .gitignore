@@ -22,3 +22,6 @@ supabase/functions/*/deno.log
 # IDE
 .vscode/
 .idea/
+
+# Large model files
+backend/feature2/ensemble_model.tflite
