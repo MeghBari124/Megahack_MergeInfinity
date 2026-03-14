@@ -1,5 +1,3 @@
-#include <dummy.h>
-
 /*
  * ESP32 Fire & Gas Sensor Node
  *
@@ -22,10 +20,13 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-// ====== CONFIGURE THESE ======    
-const char* ssid      = "MSI 5547";
-const char* password  = "<39r577M";
-const char* serverUrl = "http://10.0.18.235:8000/api/hardware/fire-gas";
+// ===================== CONFIGURATION ========================
+// WiFi Credentials
+const char* ssid = "One Plus +";
+const char* password = "Megh2006";
+
+// Backend API Endpoint
+const char* serverUrl = "http://172.17.191.229:8000/api/hardware/sensor-data";
 
 #define MQ2_A0_PIN   35
 #define MQ2_D0_PIN   34
@@ -59,7 +60,7 @@ void loop() {
   int flame2 = digitalRead(FLAME2_PIN);
 
   // Fire logic: only if BOTH flame sensors detect fire (LOW), status is "fire"
-  String fire_status = (flame1 == LOW || flame2 == LOW) ? "fire" : "safe";
+  String fire_status = (flame1 == LOW || e2 == LOW) ? "fire" : "safe";
 
   Serial.printf("MQ2: %d, MQ2_D0: %d, Flame1: %d, Flame2: %d, Status: %s\n", mq2_analog, mq2_digital, flame1, flame2, fire_status.c_str());
 

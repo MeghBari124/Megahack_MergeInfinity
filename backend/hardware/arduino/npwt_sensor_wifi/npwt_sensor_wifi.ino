@@ -47,9 +47,12 @@
 #include <HTTPClient.h>
 
 // ===================== CONFIGURATION ========================
-const char* ssid      = "MSI 5547";
-const char* password  = "<39r577M";
-const char* serverUrl = "http://10.0.18.235:8000/api/hardware/sensor-data";
+// WiFi Credentials
+const char* ssid = "One Plus +";
+const char* password = "Megh2006";
+
+// Backend API Endpoint
+const char* serverUrl = "http://172.17.191.229:8000/api/hardware/sensor-data";
 
 #define SOIL_PIN      34
 #define SEND_INTERVAL 10000  // ms between backend posts
